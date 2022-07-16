@@ -3,7 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet"> 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="style.css">
   <title>Frontend Mentor | Fylo data storage component</title>
@@ -11,16 +13,51 @@
 </head>
 <body>
 
-  You’ve used 815 GB of your storage
+  <main class="container flex">
+    <img class="mobile-bg" src="images/bg-mobile.png" alt="mobile">
+    <img class="desktop-bg" src="images/bg-desktop.png" alt="desktop">
 
-  185 GB Left
-  
-  0 GB
-  1000 GB
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+    <div class="desktop-container">
+      <div class="inner-container flex">
+        <section class="fylo-header">
+          <div class="logo">
+            <img src="images/logo.svg" alt="logo">
+          </div>
+          <div class="header-icons">
+            <img src="images/icon-document.svg" alt="doc">
+            <img src="images/icon-folder.svg" alt="folder">
+            <img src="images/icon-upload.svg" alt="upload">
+          </div>
+        </section>
+
+        <section class="fylo-storage-info">
+          <p>You’ve used <span>815 GB</span> of your storage</p>
+          <div class="slider">
+            <div class="inner-slider">
+              <div class="circle-slider"></div>
+            </div>
+          </div>
+          <div class="storage-space">
+            <p>0 GB</p>
+            <p>1000 GB</p>
+          </div>
+          <div class="floating-info">
+            <h1>185</h1>
+            <p>GB Left</p>
+            <div class="floating-info-desktop"></div>
+          </div>
+        </section>
+      </div>
+      
+      <footer>
+        <div class="attribution">
+          Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.<br>
+          Coded by <a href="https://www.frontendmentor.io/profile/joyrexjrl" target="_blank">Rick Lozano</a>.
+        </div>
+      </footer>
+    </div>
+        
+  </main>
+
 </body>
 </html>
